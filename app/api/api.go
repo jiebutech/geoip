@@ -2,7 +2,7 @@ package api
 
 import (
 	"github.com/gin-gonic/gin"
-	"gitlab.jiebu.com/base/core"
+	"github.com/jiebutech/app"
 	"gitlab.jiebu.com/server/geoip/app/dto"
 	"gitlab.jiebu.com/server/geoip/app/service"
 	"gitlab.jiebu.com/server/geoip/errcode"
@@ -17,7 +17,7 @@ func NewGeoIpController(svc *service.GeoIpService) *GeoIpCtrl {
 }
 
 func (ctrl *GeoIpCtrl) GetCountry(c *gin.Context) {
-	ctx := core.ConvertToApiContext(c)
+	ctx := app.ConvertToApiContext(c)
 	req := new(dto.IpReq)
 	if err := ctx.ShouldBind(req); err != nil {
 		ctx.ResponseJson(errcode.ErrBadRequest, "Bad Request", nil)

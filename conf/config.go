@@ -1,7 +1,7 @@
 package conf
 
 import (
-	"gitlab.jiebu.com/base/config"
+	"github.com/jiebutech/config"
 )
 
 type AppConf struct {
