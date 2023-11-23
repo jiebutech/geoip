@@ -4,10 +4,10 @@ package wire
 
 import (
 	"github.com/google/wire"
-	"gitlab.jiebu.com/server/geoip/app/api"
-	"gitlab.jiebu.com/server/geoip/app/service"
+	"github.com/jiebutech/geoip/app/api"
+	"github.com/jiebutech/geoip/pkg/geoip"
 )
 
 func NewGeoIpController() *api.GeoIpCtrl {
-	panic(wire.Build(api.NewGeoIpController, service.NewGeoIpService))
+	panic(wire.Build(api.NewGeoIpController, geoip.NewGeoIpService))
 }

@@ -2,9 +2,9 @@ package service
 
 import (
 	"context"
+	"github.com/jiebutech/geoip/conf"
 	"github.com/jiebutech/log"
 	"github.com/oschwald/geoip2-golang"
-	"gitlab.jiebu.com/server/geoip/conf"
 	"net"
 )
 

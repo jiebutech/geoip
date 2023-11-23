@@ -1,4 +1,4 @@
-module gitlab.jiebu.com/server/geoip
+module github.com/jiebutech/geoip
 
 go 1.21.4
 

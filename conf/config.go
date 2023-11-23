@@ -6,9 +6,6 @@ import (
 
 type AppConf struct {
 	*config.Configuration `json:",inline" yaml:",inline"`
-	Ip                    struct {
-		Path string `json:"path" yaml:"path"`
-	} `json:"ip" yaml:"ip"`
 }
 
 var cfg *AppConf

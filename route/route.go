@@ -2,7 +2,7 @@ package route
 
 import (
 	"github.com/jiebutech/app"
-	"gitlab.jiebu.com/server/geoip/wire"
+	"github.com/jiebutech/geoip/wire"
 )
 
 // RegisterRoute 路由注册

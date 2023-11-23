@@ -2,5 +2,3 @@ app:
   listen: :8000
   debug: true
   env: dev
-ip:
-  path: ./GeoLite2-City.mmdb

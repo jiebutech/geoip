@@ -2,8 +2,8 @@ package main
 
 import (
 	"github.com/jiebutech/app"
-	"gitlab.jiebu.com/server/geoip/conf"
-	"gitlab.jiebu.com/server/geoip/route"
+	"github.com/jiebutech/geoip/conf"
+	"github.com/jiebutech/geoip/route"
 )
 
 func main() {

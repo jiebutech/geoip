@@ -7,14 +7,14 @@
 package wire
 
 import (
-	"gitlab.jiebu.com/server/geoip/app/api"
-	"gitlab.jiebu.com/server/geoip/app/service"
+	"github.com/jiebutech/geoip/app/api"
+	"github.com/jiebutech/geoip/pkg/geoip"
 )
 
 // Injectors from wire.go:
 
 func NewGeoIpController() *api.GeoIpCtrl {
-	geoIpService := service.NewGeoIpService()
-	geoIpCtrl := api.NewGeoIpController(geoIpService)
+	geopIpSvc := geoip.NewGeoIpService()
+	geoIpCtrl := api.NewGeoIpController(geopIpSvc)
 	return geoIpCtrl
 }
